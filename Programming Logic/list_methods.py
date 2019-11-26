@@ -36,9 +36,10 @@ def string_list_tutorial():
 	print(data)
 	list1.insert(1, 'rahul')   # position to INSERT data and actual data
 	print(list1)
-	string_var = 'abc'
 	list2 = ['gambhir', 'msd']
 	print(list1.extend(list2))   # takes an iterable as input and extends the list
+	print(list1)
+	list1.pop(2)   # removes the element from a list at a particular index
 	print(list1)
 
 
