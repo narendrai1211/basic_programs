@@ -20,9 +20,8 @@ def dictionary_append():
 def write_to_file():
 	data = dictionary_append()
 	dumped = json.dumps(data, indent=4, default=str)
-	f = open('sample_data.json', 'w')
+	with open('sample_data.json', 'w') as f:
 	f.write(dumped)
-	f.close()
-
+# with open() does the job of closing the file automatically
 
 write_to_file()
