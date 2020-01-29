@@ -10,7 +10,7 @@ def append_sachin():
 
 def append_nums():
 	for i in range(1, 10 + 1):
-		x = random.randint(1, 999999999)
+		x = random.randint(1, 100)
 		list_num.append(x)
 	return list_num
 
