@@ -33,7 +33,7 @@ def reducer_code(records):
 
 def write_output(json_records):
     import json
-    dumped = json.dumps(json_records, indent=4)
+    dumped = json.dumps(json_records, indent=4, sort_keys=True, ensure_ascii=False)
     with open('output.json', 'w') as f_:
         f_.write(dumped)
 
