@@ -1,5 +1,8 @@
-def file_reader():
-    with open('input_file_to_map.txt') as f:
+import sys
+
+
+def file_reader(file_):
+    with open(file_) as f:
         d = f.readlines()
     return d
 
@@ -11,7 +14,7 @@ def mapper_code():
     for i_each in json_record:
         list_form = json_record[i_each].split()
         for i_ in list_form:
-            total_words += 1
+            # total_words += 1
             key = 1
             value_ = i_
             record = {value_: key}
@@ -41,10 +44,11 @@ def write_output(json_records):
 if __name__ == '__main__':
     cnt = 0
     json_record = {}
-    data = file_reader()
+    file_path = sys.argv[1]
+    data = file_reader(file_path)
     for i in data:
         cnt += 1
-        value = i.replace('\n', '').strip()
+        value = i.replace('\n', '').replace('.', '').replace(',', '').replace('!', '').strip()
         json_record.update({cnt: value})
     print(json_record)
     final_json = {}
