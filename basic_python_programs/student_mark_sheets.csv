@@ -1,0 +1,12 @@
+id,name,marks,iqr_marks
+1,sachin,95,True
+2,sourav,89,True
+3,virender,80,False
+4,gautam,76,True
+5,ms_dhoni,86,True
+6,rahul,88,False
+7,laxman,89,False
+8,zaheer,75,False
+9,ashish,69,False
+10,harbhajan,79,True
+11,ishant,70,False
