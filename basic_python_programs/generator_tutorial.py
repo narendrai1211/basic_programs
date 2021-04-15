@@ -12,6 +12,8 @@ if __name__ == '__main__':
 
     for row in csv_gen:
         print(row)
+        if row != '\n':
+            row_count += 1
 
     print(f"Row count is {row_count}")
 
