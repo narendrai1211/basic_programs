@@ -16,10 +16,7 @@ def do_operation(l1, l2, factor):
     for i, j in zip(l1, l2):
         print(i, j)
         output_list.append(i)
-        flag = 0
-        if flag == 0:
-            output_list.append(j)
-            flag = 1
+        output_list.append(j)
 # cleaning the output
     while factor != 0:
         output_list.remove('added')
