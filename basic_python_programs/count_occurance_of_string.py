@@ -10,3 +10,4 @@ print(json.dumps(final_dictionary, indent=2))
 
 with open('file.json', 'w') as f:
     f.write(json.dumps(final_dictionary, indent=2))
+

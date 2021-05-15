@@ -2,13 +2,13 @@ import pandas as pd
 
 
 def analyze_csv(df):
-    f = df.sort_values('marks', ascending=False)
-    print(f.columns)
+    top_order = df.sort_values('marks', ascending=False)
+    print(top_order.columns)
 
-    top_5 = f.head()['name'].to_list()
+    top_5 = top_order.head()['name'].to_list()
     print(top_5)
 
-    least_5_records = f.tail()
+    least_5_records = top_order.tail()
     final_least = least_5_records.sort_values('marks', ascending=True)['name'].to_list()
     print(final_least)
 

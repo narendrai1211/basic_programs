@@ -43,5 +43,6 @@ def string_list_tutorial():
 	print(list1)
 
 
-string_list_tutorial()
-sort_tutorial()
+if __name__ == '__main__':
+	string_list_tutorial()
+	sort_tutorial()
