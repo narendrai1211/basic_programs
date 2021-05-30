@@ -8,5 +8,4 @@ if __name__ == '__main__':
     print(len(c))
 
 
-
 # https://www.hackerrank.com/challenges/py-set-intersection-operation/problem
