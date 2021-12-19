@@ -15,7 +15,19 @@ def bubble_sort(list_e, total_size):
     return list_e
 
 
+def selection_sort(list_e, total_size):
+    for i in range(0, total_size - 1):
+        # print(i)
+        print('Comparing first element with all the other elements .. ')
+        for j in range(i+1, total_size):
+            if list_e[i] > list_e[j]:
+                temp = list_e[j]
+                list_e[j] = list_e[i]
+                list_e[i] = temp
+        print(list_e)
+
+
 if __name__ == '__main__':
     list_ = [4, 1, 41, 2]
     arr_size = len(list_)
-    bubble_sort(list_, arr_size)
+    selection_sort(list_, arr_size)
