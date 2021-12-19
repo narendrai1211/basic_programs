@@ -14,8 +14,6 @@ class Solution:
         i = len(s) - 1
 
         while i >= 0:
-
-
             # traverse the string from backwards and compare the previous element with current
             print(s[i])
             if i < len(s)-1 and dict_roman[s[i]] < dict_roman[s[i+1]]:
